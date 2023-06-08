@@ -17,8 +17,8 @@ app = FastAPI()
 # so we can send api request to our database to get the data
 while True:
     try:
-        connect = psycopg2.connect(host='localhost', database='instagram',
-                                   user='postgres', password='OSrvsuRs', cursor_factory=RealDictCursor)
+        connect = psycopg2.connect(host='localhost', database='...',
+                                   user='...', password='...', cursor_factory=RealDictCursor)
         db_connection = connect.cursor()
         print('Database connection was successful!')
         break
